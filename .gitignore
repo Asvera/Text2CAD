@@ -15,4 +15,4 @@ __pycache__/
 *.scad
 
 # Extra
-main2.py
+Tests/
