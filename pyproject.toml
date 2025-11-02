@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cadgen"  # <-- Changed from "text-to-scad"
+version = "0.1.0"
+dependencies = [
+    "click",
+    "google-generativeai",
+    "python-dotenv",
+]
+
+[project.scripts]
+cadgen = "cadgen.cli:main"  # <-- Command is 'cadgen', points to 'cadgen' package

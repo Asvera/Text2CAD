@@ -16,3 +16,4 @@ __pycache__/
 
 # Extra
 Tests/
+*.egg-info/
