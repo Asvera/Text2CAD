@@ -100,6 +100,7 @@ def main(prompt, output_dir, base_name, api_key, render_stl, render_png):
     # --- 1. Directory Setup ---
     try:
         os.makedirs(output_dir, exist_ok=True)
+        
         click.echo(f"📁 Ensuring output directory exists: {output_dir}")
     except OSError as e:
         click.echo(f"❌ Error creating directory {output_dir}: {e}", err=True)

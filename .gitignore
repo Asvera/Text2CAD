@@ -10,9 +10,11 @@ __pycache__/
 *.pyc
 
 # Ignore PNGs and STL file CAD
-*.png 
+# *.png 
 *.stl 
 *.scad
 
 # Extra
 Tests/
+cr.sh
+experiment_template.md
