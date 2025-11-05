@@ -48,7 +48,7 @@ Creating CAD models manually is time-consuming and error-prone. CADGen aims to r
 1. Clone the repository:  
 ```bash
 git clone https://github.com/asvera/CADGen.git
-cd CADGen
+cd CADGen/
 ```
 2. Install required dependencies:
 ```bash
