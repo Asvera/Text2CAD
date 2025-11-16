@@ -2,7 +2,7 @@
 
 ## Objective
 Experiment Details :
-> This project aims to generate a 3D model of woodruff key.
+> This aims to generate a 3D model of woodruff key.
 ---
 
 ## Prompts

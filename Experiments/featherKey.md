@@ -2,7 +2,7 @@
 
 ## Objective
 Experiment Details :
-> This project aims to Feather Key.
+> This aims to Feather Key.
 
 ---
 
