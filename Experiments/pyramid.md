@@ -2,13 +2,13 @@
 
 ## Objective
 Experiment Details :
-> This experiment aims to generate a 3D cube of 100mm
+> This aims to generate a pentagonal pyramid height 70 mm and side of the base 20 mm.
 
 ---
 
 ## Prompts
 List the prompts or inputs used are:
-1. "A cube 100mm."
+1. "Write OpenSCAD code to model a pentagonal pyramid height 70 mm and side of the base 20 mm resting on ground."
 
 ---
 
@@ -16,7 +16,7 @@ List the prompts or inputs used are:
 
 | Prompt | Time Taken | Attempt | Outcome | Error |
 |--------|------------|--------|---------|-------|
-| Prompt 1 | 5.152s | 1 | ![Success Image](./cube/cube.png) | None |
+| Prompt 1 | 18.26s | 1 | ![Success Image](./pyramid/pyramid.png) | None |
 ---
 
 ### Notes
