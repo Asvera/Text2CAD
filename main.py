@@ -22,6 +22,7 @@ def generate_scad_code(user_prompt: str, api_key: str) -> str:
         3.  Make the design parametric by using variables for key dimensions at the top of the script.
         4.  Add comments to explain the purpose of the variables.
         5.  The final line of the code must be the module instantiation that renders the object.
+        6.  Do not use 'module' as an variable as it is a reserved word in openscad.
         """
 
         model = genai.GenerativeModel(
