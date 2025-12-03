@@ -10,16 +10,11 @@ Experiment Details :
 List the prompts or inputs used are:
 1. "Generate a spur gear with pitch radius 9mm."
 2. "Generate a spur gear with pitch radius 9mm.You can external BOSL2 library but cross-check the syntax."
-3. " "
-4. "Generate a complete, self-contained OpenSCAD script for a single involute spur gear. The gears design must be defined by the following standard parameters:
-    - **Pitch Diameter (D):** 18 mm (ensuring the Pitch Radius is 9 mm).
-    - **Module (m):** 1.0 mm (This is the ratio D/Z and is standard).
-    - **Number of Teeth (Z):** Must be calculated based on the Pitch Diameter and Module (Z = D/m).
-    - **Pressure Angle:** Use the industry standard of 20 degrees.
-    - **Thickness (H):** 5 mm.
-    - **Bore Diameter:** A center hole of 4 mm. <br>
-The OpenSCAD code should define a main gear() module and use a difference() operation to cut the center bore. Do not rely on external include <library.scad>files; define the necessary calculations and 3D geometry directly."
-6. "Generate a spur gear with pitch radius 9mm. Use external BOSL2 library.
+3. "Generate a spur gear with pitch radius 9mm.You can external BOSL2 library and do not use 'module' as variale as it a reserved keyword in openscad. Recheck the code after writing again."
+4. "Generate a spur gear with pitch radius 9mm. Use external BOSL2 library.'Example: include <BOSL2/std.scad>
+include <BOSL2/gears.scad>
+spur_gear(circ_pitch=5, teeth=20, thickness=8, shaft_diam=5);'"
+5. "Generate a spur gear with pitch radius 9mm. Use external BOSL2 library.
 <br>
 'Example:
 include <BOSL2/std.scad>
@@ -32,8 +27,15 @@ Usage: As a Module
 <br>
 Usage: As a Function
     vnf = spur_gear(circ_pitch, teeth, [thickness]);
-    vnf = spur_gear(mod=|diam_pitch=, teeth=, [thickness=]);
-"
+    vnf = spur_gear(mod=|diam_pitch=, teeth=, [thickness=]);"
+6. "Generate a complete, self-contained OpenSCAD script for a single involute spur gear. The gears design must be defined by the following standard parameters:
+    - **Pitch Diameter (D):** 18 mm (ensuring the Pitch Radius is 9 mm).
+    - **Module (m):** 1.0 mm (This is the ratio D/Z and is standard).
+    - **Number of Teeth (Z):** Must be calculated based on the Pitch Diameter and Module (Z = D/m).
+    - **Pressure Angle:** Use the industry standard of 20 degrees.
+    - **Thickness (H):** 5 mm.
+    - **Bore Diameter:** A center hole of 4 mm. <br>
+The OpenSCAD code should define a main gear() module and use a difference() operation to cut the center bore. Do not rely on external include <library.scad>files; define the necessary calculations and 3D geometry directly."
 ---
 
 ## Result
