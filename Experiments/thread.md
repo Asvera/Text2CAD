@@ -26,7 +26,7 @@ threaded_rod(d=25, height=20, pitch=2, $fa=1, $fs=1);'"
 | Prompt 1 | 38.6s | 1 | ![Success Image](./thread/thread.png) | None |
 | Prompt 2 | 9.48s | 2 | ![Output Image](./thread/thread2.png) | failure -Incorrect syntax |
 | Prompt 3 | 15.2s | 3 | ![Result Image](./thread/thread3.png) | failure |
-| Prompt 3 | 8.7s | 4 | ![Result Image](./thread/thread4.png) | success |
+| Prompt 4 | 8.7s | 4 | ![Result Image](./thread/thread4.png) | success |
 
 ---
 
